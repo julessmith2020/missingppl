@@ -256,7 +256,9 @@ svg {
 
 table {
   caption-side: bottom;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  margin-right: 0 !important; 
+}
 
 caption {
   padding-top: 0.5rem;
@@ -402,6 +404,13 @@ progress {
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.data-table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
 }
 
 .lead {
@@ -1362,7 +1371,6 @@ progress {
   --bs-table-active-bg: rgba(17, 17, 17, 0.1);
   --bs-table-hover-color: var(--bs-body-color);
   --bs-table-hover-bg: rgba(17, 17, 17, 0.075);
-  width: 100%;
   margin-bottom: 1rem;
   color: var(--bs-table-color);
   vertical-align: top;
@@ -9247,10 +9255,6 @@ img {
 
 .transform-scale:hover {
   transform: scale(1.5, 1.5); }
-
-.px-vw-5 {
-  padding-left: 5vw;
-  padding-right: 5vw; }
 
 .vh-5 {
   height: 5vh; }
