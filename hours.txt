@@ -1,0 +1,16 @@
+Planning/Setup meeting (9-Jun, 8:00 AM):
+    Claire Bean -- 20 mins
+    Jason Carter -- 1 hr 20 mins
+    Elaina Halls -- 1 hr 20 mins
+    Madison Hutchings -- 1 hr 20 mins
+    Jules Smith -- 1 hr 20 mins
+
+Individual work:
+    Claire Bean -- (9-Jun) 1 hr 10 min, (12-Jun) 40 min
+    Jason Carter -- 8.5 hr
+    Elaina Halls -- 3 hrs
+    Madison Hutchings -- (8-Jun) 1 hr, (10-Jun) 2 hr, (12-Jun) 2 hr
+    Jules Smith -- (9-Jun) 1hr, (12-Jun) 1hr, 
+
+Note -- I merged the two hours.txt files, so I'll delete the other one now so as to not cause confusion.
+    -- Jason
