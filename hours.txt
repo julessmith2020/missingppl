@@ -10,7 +10,7 @@ Individual work:
     Jason Carter -- 11 hr
     Elaina Halls -- 3 hrs
     Madison Hutchings -- (8-Jun) 1 hr, (10-Jun) 2 hr, (12-Jun) 2 hr
-    Jules Smith -- (9-Jun) 1hr, (12-Jun) 1hr, 
+    Jules Smith -- (9-Jun) 1.5 hr, (12-Jun) 2hr, 
 
 Note -- I merged the two hours.txt files, so I'll delete the other one now so as to not cause confusion.
     -- Jason
