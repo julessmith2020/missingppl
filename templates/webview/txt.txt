@@ -7,3 +7,6 @@
     </li>
     {% endfor %}
   </ul>
+
+-- I just put this here for future reference when we're using it in part 3.
+    -- Jason A. Carter
