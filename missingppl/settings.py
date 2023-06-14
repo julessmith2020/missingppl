@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+#    There's not a whole lot to say here -- almost all of this was walked through in-class. I messed with the static files a bit on my own,
+#    but a lot of this is code that I don't even know what it does.
+
 from pathlib import Path
 import os
 
