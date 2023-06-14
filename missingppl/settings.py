@@ -84,6 +84,7 @@ DATABASES = {
         'NAME': 'missing_persons',
         'USER': 'postgres',
         'PASSWORD': '',
+        #    No password for you haha we are SECURE up in here ... and still have debug on.
         'HOST': 'localhost'
     }
 }
