@@ -10,6 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+## MISSING PEOPLE GROUP PROJECT
+# create a server that displays content regarding human trafficking with the help of url mapping, static files, html templates, and connecting tables to a database
+# Jules Smith, Claire Bean, Madison Hutchings, Jason Carter, Elaina Halls
+
 from pathlib import Path
 import os
 
