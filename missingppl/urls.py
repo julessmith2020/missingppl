@@ -22,4 +22,5 @@ urlpatterns = [
     path('',include('webview.urls')),    
 ]
 #    We only have the one webview app, so all this does is let us put webview urls in the webview folder.
-#    We'd change the '' to something different if we had more apps.
+#    We'd change the '' to something different if we had more apps -- '' indicates the homepage
+
