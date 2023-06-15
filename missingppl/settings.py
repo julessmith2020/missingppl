@@ -10,9 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-#    There's not a whole lot to say here -- almost all of this was walked through in-class. I messed with the static files a bit on my own,
-#    but a lot of this is code that I don't even know what it does.
-
 from pathlib import Path
 import os
 
@@ -33,7 +30,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+#we connected the webview app to the list so when the server runs, it recognizes to utilize the webview app
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -59,6 +56,8 @@ ROOT_URLCONF = 'missingppl.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        #directs the path to the base directory of the templates folder; allows the code to have access to the templates
+        #or htmls of the django folder
         'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,6 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+#this code allows us to have access to the static files (images, css, etc) and design the website
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
