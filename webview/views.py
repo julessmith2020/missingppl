@@ -10,7 +10,19 @@ def indexPageView(request) :
                 'personTable' : personTable
         }
         return render(request, 'webview/index.html', context)  
+
 def contentPageView(request) :
         return render(request, 'webview/content.html')
+
 def systemPageView(request) :
         return render(request, 'webview/system.html')
+
+def personView(request, personID):
+        data = Person.objects.filter(
+                id=personID
+        ).get()
+        #filter builds a where clause
+        context = {
+                'person' : data
+        }
+        return render(request, 'webview/person.html', context)
