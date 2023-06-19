@@ -1,0 +1,369 @@
+<!doctype html>
+{% load static %}
+<html class="h-100" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favicon.png' %}">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>RAT - Home</title>
+  <link rel="stylesheet" href="{% static 'css/theme.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}">
+
+  <style>
+    /* inter-300 - latin */
+    @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+    url("{% static 'fonts/inter-v12-latin-300.woff2' %}") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("{% static 'fonts/inter-v12-latin-300.woff' %}") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+    /* inter-400 - latin */
+    @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+    url("{% static 'fonts/inter-v12-latin-regular.woff2' %}") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("{% static 'fonts/inter-v12-latin-regular.woff' %}") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+    @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+    url("{% static 'fonts/inter-v12-latin-500.woff2' %}") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("{% static 'fonts/inter-v12-latin-500.woff' %}") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+    @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+    url("{% static 'fonts/inter-v12-latin-700.woff2' %}") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("{% static 'fonts/inter-v12-latin-700.woff' %}") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  </style>
+
+
+</head>
+
+<body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+
+  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
+    <div class="container">
+      <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="{% url 'index' %}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
+          viewBox="0 0 16 16">
+          <path
+            d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
+          <path
+            d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
+        </svg>
+        <!-- This is the title of the website on the top of the page  -->
+        <span class="ms-md-1 mt-1 fw-bolder me-md-5">Rise Against Trafficking</span>
+      </a>
+<!-- below is the nav bar with the links to go to the other pages-->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="{% url 'index' %}" aria-label="Homepage">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="{% url 'content' %}" aria-label="A content page">
+            Stories
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="{% url 'system' %}" aria-label="A data page">
+            Data
+          </a>
+        </li>
+
+      </ul>
+      <a href="https://attorneygeneral.utah.gov/initiatives/human-trafficking/" aria-label="Read More"
+        class="btn btn-outline-light">
+        <small>Read More</small>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Here is the main text that just explains the mission statement of the site -->
+    <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade">
+      <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
+      <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
+        <div class="row d-flex align-items-center justify-content-center py-vh-5">
+          <div class="col-12 col-xl-10">
+            <span class="h5 text-secondary fw-lighter">Our Mission</span>
+            <h1 class="display-huge mt-3 mb-3 lh-1">Ending Human Trafficking, Restoring Lives.</h1>
+          </div>
+          <div class="col-12 col-xl-8">
+            <p class="lead text-secondary">
+              We are passionately dedicated to making a positive impact in the fight
+              against human trafficking. Our mission is driven by the belief that every person deserves a life filled
+              with freedom, dignity, and hope. Through our collective efforts, we aim to raise awareness, provide
+              education, and offer support to those affected by this global issue. By fostering empowerment and building
+              a network of compassionate individuals, we strive to create a world where human trafficking is eradicated.
+              Together, we can make a difference, restore lives, and inspire a brighter future for all.</p>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+<!-- Below are some images for the webpage -->
+    <div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
+      <div class="container-fluid px-vw-5">
+        <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
+        <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
+          <div class="col-12 col-lg-6">
+            <img src="{% static 'img/webp/0shadows.webp' %}" width="2280" height="1732" alt="shadows image"
+              class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="{% static 'img/webp/0subway.webp' %}" width="1116" height="1578" alt="subway image"
+              class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="2000">
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="{% static 'img/webp/0walking.webp' %}" width="1116" height="848" alt="walking image"
+              class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up" data-aos-duration="3000">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Below is just some more text boxes and images -->
+    <div class="bg-dark">
+      <div class="container px-vw-5 py-vh-5">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
+            <span class="h5 text-secondary fw-lighter">What we do</span>
+            <h2 class="display-4">We are dedicated to raising awareness about human trafficking, educating individuals
+              about its realities, and empowering them to take action against this serious violation of human rights.
+            </h2>
+          </div>
+          <div class="col-12 col-lg-5" data-aos="fade-left">
+            
+            </p>
+            <h3>Research and Real Stories</h3>
+            <p class="text-secondary">We can deepen our understanding of human trafficking through personal narratives<br>
+              <!-- the link below takes the user to another webpage --> 
+              <a href="{% url 'content' %}" class="link-fancy link-fancy-light me-2">Tell me more</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+              </svg>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-black py-vh-3">
+       <div>
+        <table style="width: 90%; margin: auto;">
+          <thead>
+            <div class="col-12 col-md-6">
+              <div class="p-5 pt-0 mt-5" data-aos="fade">
+                <tr>
+                  <th>Date Missing</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Age At Missing</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Gender</th>
+                  <th>Race</th>
+                  <!-- Add more column headers as needed -->
+              </tr>
+          </thead>
+          <tbody>
+              {% for person in personTable %}
+              <tr>
+                  <td>{{ person.date_missing }}</td>
+                  <td>{{ person.last_name }}</td>
+                  <td>{{ person.first_name }}</td>
+                  <td>{{ person.age_at_missing }}</td>
+                  <td>{{ person.city }}</td>
+                  <td>{{ person.state }}</td>
+                  <td>{{ person.gender }}</td>
+                  <td>{{ person.race }}</td>
+                  <!-- Add more columns as needed -->
+              </tr>
+              {% endfor %}                
+            
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+        <div class="row gx-5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark position-relative">
+      <div class="container px-vw-5 py-vh-5">
+        <div class="row d-flex align-items-center">
+
+          <div class="col-12 col-lg-7">
+            <img class="img-fluid rounded-5 mb-n5 shadow" src="{% static 'img/webp/0family.webp' %}" width="512" height="512"
+              alt="family" loading="lazy" data-aos="zoom-in-right">
+            <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="{% static 'img/webp/0sand.webp' %}" width="512" height="512"
+              alt="sand" loading="lazy" data-aos="zoom-in-up">
+          </div>
+          <!-- Just some more text and info -->
+          <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
+            <span class="h5 text-secondary fw-lighter">Do you want to make a difference?</span>
+            <h2 class="display-4">Join the community to raise awareness about human trafficking. Become educated on this subject to help others.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    </div>
+
+      </div>
+    </div>
+    <!-- Below are floating boxes with quotes on human trafficking  -->
+    <div class="bg-dark py-vh-5">
+      <div class="container px-vw-5">
+        <div class="row d-flex gx-5 align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="rounded-5 bg-black p-5 shadow" data-aos="zoom-in-right">
+              
+              <p class="text-secondary lead">“It is estimated that human trafficking is a $32 billion per year industry with $9.5 billion of that in the United States, second only to drug trafficking as the most profitable form of transnational crime."</p>
+              <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
+               
+                <div>
+                  <span class="h6 fw-5">Asian Association of Utah</span><br>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="rounded-5 bg-black p-5 shadow mt-5" data-aos="zoom-in-right">
+              
+              <p class="text-secondary lead">“It takes a long time to find your self-worth and realize that you can have a life after trafficking, that it is possible.”</p>
+              <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
+              
+                <div>
+                  <span class="h6 fw-5">Brandi Funk</span><br>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="rounded-5 bg-black p-5 shadow" data-aos="zoom-in-right">
+              
+              <p class="text-secondary lead">“Human trafficking is a modern-day form of slavery involving the illegal trade of people for exploitation or commercial gain.”</p>
+              <div class="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
+               
+                <div>
+                  <span class="h6 fw-5">Sean D. Reyes</span><br>
+                
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="bg-black border-top border-dark">
+    <div class="container py-vh-4 text-secondary fw-lighter">
+      <div class="row">
+        <div class="col-12 col-lg-5 py-4 text-center text-lg-start">
+          <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="{% url 'index' %}" align=center>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
+              viewBox="0 0 16 16">
+              <path
+                d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
+              <path
+                d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
+            </svg> <!-- this is the icon-->
+            <span class="ms-md-1 mt-1 fw-bolder me-md-5">Rise Against Trafficking</span>
+          </a>
+
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    <!-- Footer with our names is below -->
+    <div class="container text-center small py-vh-2 border-top border-dark">Made by Elaina, Jules, Jason, Maddie and Claire
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script>
+    AOS.init({
+      duration: 800, // values from 0 to 3000, with step 50ms
+    });
+  </script>
+  <script>
+    let scrollpos = window.scrollY;
+    const header = document.querySelector(".navbar");
+    const header_height = header.offsetHeight;
+
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= header_height) { add_class_on_scroll(); }
+      else { remove_class_on_scroll(); }
+
+      console.log(scrollpos);
+    })
+  </script>
+
+</body>
+
+</html> -->

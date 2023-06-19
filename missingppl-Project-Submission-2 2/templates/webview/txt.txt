@@ -1,0 +1,12 @@
+<ul>
+    {% for entry in personTable %}
+    <li>
+      <a href="{% url 'indexPageView' first_name=entry.first_name %}">
+        {{ entry.first_name|title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+-- I just put this here for future reference when we're using it in part 3.
+    -- Jason A. Carter
