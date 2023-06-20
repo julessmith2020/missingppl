@@ -1,20 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Missing Person Info</title>
-</head>
-<body>
-    <h2>{{person.first_name}} {{person.last_name}}</h2>
-    <p>{{person.gender}}</p>
-    <p>{{person.race}}</p>
-    <p>{{person.age_at_missing}}</p>
-    <p>{{person.city}}</p>
-    <p>{{person.state}}</p>
-    <p>{{person.date_missing}}</p>
-    <br>
-    <a href="{% url 'index' %}">GO BACK</a>
+{% load static %}
+<html class="h-100" lang="en">
 
-</body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favicon.png' %}">
+    <meta name="author" content="Holger Koenemann">
+    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="HandheldFriendly" content="true">
+    <title>RAT - Person</title>
+    <link rel="stylesheet" href="{% static 'css/theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/theme.css' %}">
+
+    <style>
+    /* inter-300 - latin */
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(''),
+        url('{% static 'fonts/inter-v12-latin-300.woff2' %} format("woff2")'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{% static 'fonts/inter-v12-latin-300.woff' %} format("woff")');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* inter-400 - latin */
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local(''),
+        url('{% static 'fonts/inter-v12-latin-regular.woff2' %} format("woff2")'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{% static 'fonts/inter-v12-latin-regular.woff' %} format("woff")');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(''),
+        url('{% static 'fonts/inter-v12-latin-500.woff2' %} format("woff2")'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{% static 'fonts/inter-v12-latin-500.woff' %} format("woff")');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(''),
+        url('{% static 'fonts/inter-v12-latin-700.woff2' %} format("woff2")'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{% static 'fonts/inter-v12-latin-700.woff' %} format("woff")');
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    </style>
+
+
+</head>
+
+<div class="position-absolute w-50 h-50 bg-black opacity-75 top-0 start-0"></div>
+<div class="container py-vh-4 position-relative px-vw-5 text-center">
+    <div class="row d-flex align-items-center justify-content-center py-vh-5">
+    <div class="col-12 col-xl-10">
+        <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+            <br>
+            <h2>NAME: {{person.first_name}} {{person.last_name}}</h2>
+            <p>GENDER: {{person.gender}}</p>
+            <p>RACE: {{person.race}}</p>
+            <p>AGE AT MISSING: {{person.age_at_missing}}</p>
+            <p>CITY: {{person.city}}</p>
+            <p>STATE: {{person.state}}</p>
+            <p>DATE MISSING: {{person.date_missing}}</p>
+            <br>
+            <a href="{% url 'index' %}" aria-label="Read More"
+                class="btn btn-outline-light">
+                <small>Go Back</small>
+            </a>
+
+        </body>
+    </div>
+    </div>  
+</div>    
+</div>            
 </html>
