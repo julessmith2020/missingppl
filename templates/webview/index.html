@@ -217,9 +217,9 @@
                   <td>{{ person.state }}</td>
                   <td>{{ person.gender }}</td>
                   <td>{{ person.race }}</td>
-                  <td><button><a href="{% url 'personView' personID=person.id %}">
-                    VIEW Person
-                    </a></button></td>
+                  <td><a href="{% url 'personView' personID=person.id %}" aria-label="View Person"
+                    class="btn btn-outline-light">
+                    <small>View Person</small></td>
                   <!-- Add more columns as needed -->
               </tr>
               {% endfor %}                
