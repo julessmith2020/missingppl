@@ -117,7 +117,8 @@
     <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
         <div class="row d-flex align-items-center justify-content-center py-vh-5">
         <div class="col-12 col-xl-10">
-            
+        <!-- Here we include the data of the individual we decided to preview; the person.<variable> indicates the specific person's 
+            info and does not include anyone else's-->    
                 <h2>NAME: {{person.first_name}} {{person.last_name}}</h2>
                 <p>GENDER: {{person.gender}}</p>
                 <p>RACE: {{person.race}}</p>
@@ -126,6 +127,7 @@
                 <p>STATE: {{person.state}}</p>
                 <p>DATE MISSING: {{person.date_missing}}</p>
                 <br>
+            <!-- this button allows us to return back to the index page by it's name variable shortcut to head back to the table -->
                 <a href="{% url 'index' %}" aria-label="Read More"
                     class="btn btn-outline-light">
                     <small>Go Back</small>
